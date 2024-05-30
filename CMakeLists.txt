@@ -17,6 +17,9 @@ project ("Graphics")
 # .h or .cpp file you add to the project, you must add its path to this command.
 add_executable (Graphics "src/main.cpp"      )
 
+set(CMAKE_TOOLCHAIN_FILE "C:/vcpkg/scripts/buildsystems/vcpkg.cmake")
+set(VCPKG_TARGET_TRIPLET "x64-windows")
+set(CMAKE_PREFIX_PATH "C:/vcpkg/installed/x64-windows")
 
 # Find and link external libraries, like SFML.
 # This only works if Vcpkg has been configured correctly.
